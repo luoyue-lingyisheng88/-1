@@ -138,7 +138,7 @@ for i in range(20):
    
     plt.subplot(5, 4, i + 1)
    
-    plt.imshow(images[i].cpu().squeeze(), cmap="gray")  # 显示图片，确保转换回 CPU
+    plt.imshow(images[i].cpu().squeeze(), cmap="gray") 
    
     plt.title(f"Predicted: {classes[predicted[i].item()]}")
    
